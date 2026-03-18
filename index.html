@@ -1,52 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildflowers in Cavite</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildflowers in Cavite - Classification</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CLASSIFICATION</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
 
-    <main class="content">
+    <a class="navbar-brand fw-bold">🌸 Wildflowers Cavite</a>
 
-        <section class="flower-box">
-            <img src="data:image/jpeg;base64,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" alt="Firefly Flower">
-            <p class="title">The Firefly Flower</p>
-            <p class="description">
-                The Firefly Flower is a glowing wonder, often found in Cavite’s quiet fields. 
-                Its delicate petals seem to sparkle under the evening light, resembling fireflies in the dark. 
-                It represents hope, peace, and the quiet beauty of nature.
-            </p>
-        </section>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <section class="flower-box">
-            <img src="https://www.picturethisai.com/wiki-image/1080/153435185545740313.jpeg" alt="Cavite Daisy">
-            <p class="title">🌼 Cavite Daisy</p>0rLS0tL
-            <p class="description">
-                The Cavite Daisy is a simple yet elegant wildflower commonly seen in open meadows and gardens. 
-                It blooms in clusters, representing purity and simplicity. 
-                This flower is often linked to innocence and new beginnings.
-            </p>
-        </section>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html (3).html">Classification</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html (4).html">Contact</a></li>
+      </ul>
+    </div>
 
-    </main>
+  </div>
+</nav>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Wildflowers in Cavite | All Rights Reserved</p>
-    </footer>
+<div class="container mt-5 classification">
+  <h2 class="text-center">Classification of Wild Flowers</h2>
+
+  <div class="row mt-4">
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="mountain-bloom.jpg.jpg" class="card-img-top" alt="Mountain Bloom">
+        <div class="card-body">
+          <h5 class="card-title">🌼 Mountain Bloom</h5>
+          <p class="card-text">
+            The Mountain Bloom thrives in Cavite’s cooler highlands, bringing vibrant color to the mountainsides. 
+            Its petals open brightly in the morning sun and provide nectar for bees and butterflies. 
+            The flower symbolizes strength and endurance because it survives harsh conditions at high altitudes. 
+            Local farmers often notice it growing near streams, which helps maintain healthy soil. 
+            Its delicate fragrance adds a peaceful aroma to the mountain air. 
+            Many photographers and hikers enjoy capturing its natural beauty in photographs. 
+            Overall, the Mountain Bloom is admired for both its resilience and elegance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="cavite-daisy.jpg.webp" class="card-img-top" alt="Cavite Daisy">
+        <div class="card-body">
+          <h5 class="card-title">🌼 Cavite Daisy</h5>
+          <p class="card-text">
+             The Cavite Daisy is a simple yet elegant wildflower commonly seen in open meadows and gardens. 
+            It blooms in clusters, creating a white and yellow carpet across the fields. 
+            This flower represents purity, innocence, and new beginnings, making it a favorite in local festivals. 
+            Bees and other pollinators are often seen visiting its petals during the day. 
+            Cavite Daisy adapts well to both sunlight and partial shade, making it a resilient plant. 
+            Its gentle beauty attracts nature enthusiasts, who often pick it for floral arrangements. 
+            The daisy is not only visually appealing but also contributes to local biodiversity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="firefly-flowers.jpg.webp" class="card-img-top" alt="Firefly Flower">
+        <div class="card-body">
+          <h5 class="card-title">✨ Firefly Flower</h5>
+          <p class="card-text">
+             The Firefly Flower is a glowing wonder often found in quiet fields of Cavite. 
+            Its petals seem to sparkle under the evening light, resembling tiny fireflies. 
+            The flower represents hope, peace, and the quiet beauty of nature. 
+            At night, it naturally illuminates small areas, creating magical scenery for hikers. 
+            It attracts nocturnal insects that are drawn to its soft glow. 
+            Local communities value it for its calming presence and natural charm. 
+            Firefly Flowers are rare, making sightings a memorable experience for nature lovers and photographers alike.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="text-center mt-5 py-3 bg-success text-white">
+  © 2025 Wildflowers in Cavite | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
